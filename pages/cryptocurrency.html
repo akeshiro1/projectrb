@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crypto</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #000;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #fff;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s ease;
+      }
+      a:hover {
+        color: deepskyblue;
+      }
+      .wrap {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1100px;
+      }
+      header {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: #000;
+        background-size: cover;
+        background-position: 50% 100%;
+      }
+      @keyframes slidein {
+        0% {
+          opacity: 0;
+          left: 20%;
+          --speed: 5s;
+        }
+        100% {
+          opacity: 1;
+          left: 0%;
+          --speed: 10s;
+        }
+      }
+      nav {
+        width: 100%;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-size: 2rem;
+      }
+      nav .menu li {
+        display: inline-block;
+        list-style: none;
+        padding-left: 30px;
+      }
+      main {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        transition: ease-in 350ms;
+        animation: slidein 0.5s linear;
+      }
+      main .content {
+        flex-basis: 50%;
+      }
+      main .content h2 span {
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 2rem;
+      }
+      main .content h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      main .content p {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        line-height: 32px;
+      }
+
+      main .img {
+        flex-basis: 50%;
+      }
+      main img {
+        height: 100%;
+        width: 100%;
+      }
+      main .btn {
+        background: deepskyblue;
+        padding: 10px 30px;
+        color: #fff;
+        border-radius: 30px;
+      }
+      @media (max-width: 540px) {
+        nav {
+          padding: 20px;
+        }
+        .menu {
+          display: none;
+        }
+        main {
+          padding: 30px;
+        }
+
+        main .content {
+          order: 2;
+          flex-basis: 100%;
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+        main .content h2 {
+          font-size: 2rem;
+        }
+        main .content p {
+          font-size: 14px;
+          margin-bottom: 1rem;
+        }
+        main .img {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="wrap">
+        <a href="#" class="logo">Informational</a>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./topics.html">Topics</a></li>
+          <li><a href="#">Setting Up</a></li>
+          <li><a href="#">Investing</a></li>
+          <li><a href="#"> </a></li>
+        </ul>
+      </nav>
+      <main class="wrap">
+        <div class="content">
+          <h2><span>#2</span><br />Cryptocurrency</h2>
+          <p>
+            The market of Crypto is categorized under something called the
+            Decentralized Finances(Exchange), otherwise known as DeFi.
+            Cryptocurrencies are also categorized into sorts of "Ecosystems"
+            that revolve around major cryptocurrencies like Bitcoin and
+            ETH(Ethereum). This market uses methods like blockchain that records
+            all transactions that happen through crypto and store them on
+            databases through multiple computers creating "blocks" forming a
+            chain, ensuring security and prevents flaws by correcting its
+            network of computers records.
+          </p>
+          <a href="./stocks_continued.html" class="btn">Previous</a>
+          <a href="topics.html" class="btn">Continue</a>
+        </div>
+        <div class="img">
+          <img
+            src="https://www.nasdaq.com/sites/acquia.prod/files/styles/720x400/public/2021/05/07/cryptocurrency-Nuthawut-adobe.jpg?h=6acbff97&itok=kyPXtQ0N"
+            alt=""
+            srcset=""
+            style="border-radius: 25px; filter: drop-shadow(8px 8px 10px white)"
+          />
+        </div>
+      </main>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stocks</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #000;
+      }
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        color: #fff;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.3s ease;
+      }
+      a:hover {
+        color: deepskyblue;
+      }
+      .wrap {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 1100px;
+      }
+      header {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        background: #000;
+        background-size: cover;
+        background-position: 50% 100%;
+      }
+      @keyframes slidein {
+        0% {
+          opacity: 0;
+          left: 20%;
+          --speed: 5s;
+        }
+        100% {
+          opacity: 1;
+          left: 0%;
+          --speed: 10s;
+        }
+      }
+      nav {
+        width: 100%;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo {
+        font-size: 2rem;
+      }
+      nav .menu li {
+        display: inline-block;
+        list-style: none;
+        padding-left: 30px;
+      }
+      main {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        transition: ease-in 350ms;
+        animation: slidein 0.5s linear;
+      }
+      main .content {
+        flex-basis: 50%;
+      }
+      main .content h2 span {
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 2rem;
+      }
+      main .content h2 {
+        text-transform: uppercase;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      main .content p {
+        font-size: 1rem;
+        margin-bottom: 3rem;
+        line-height: 32px;
+      }
+
+      main .img {
+        flex-basis: 50%;
+      }
+      main img {
+        height: 100%;
+        width: 100%;
+      }
+      main .btn {
+        background: deepskyblue;
+        padding: 10px 30px;
+        color: #fff;
+        border-radius: 30px;
+      }
+      @media (max-width: 540px) {
+        nav {
+          padding: 20px;
+        }
+        .menu {
+          display: none;
+        }
+        main {
+          padding: 30px;
+        }
+
+        main .content {
+          order: 2;
+          flex-basis: 100%;
+          width: 100%;
+          margin-bottom: 2rem;
+        }
+        main .content h2 {
+          font-size: 2rem;
+        }
+        main .content p {
+          font-size: 14px;
+          margin-bottom: 1rem;
+        }
+        main .img {
+          flex-basis: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="wrap">
+        <a href="#" class="logo">Informational</a>
+        <ul class="menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./topics.html">Topics</a></li>
+          <li><a href="#">Setting Up</a></li>
+          <li><a href="#">Investing</a></li>
+          <li><a href="#"> </a></li>
+        </ul>
+      </nav>
+      <main class="wrap">
+        <div class="content">
+          <h2><span>#1.5</span><br />Stocks</h2>
+          <p>
+            Once you own stocks, you are now a shareholder of the corporation
+            you invested in. This category of asset exchanges are apart of
+            Centralized companies and corporations. Market makers form the
+            backbone of all trading and provide the liquidity(the availability
+            of liquid assets to a market, basically the company's ability to
+            raise cash when it needs it.) of stocks. There are many types of
+            stocks to invest in and have different pros and cons to long term vs
+            short term, whether you invest into indexes that handle your money
+            and place them into different corporations, or singular investing
+            which is you investing into companies/corporations yourself.
+          </p>
+          <a href="./stocks.html" class="btn">Previous</a>
+          <a href="./cryptocurrency.html" class="btn">Continue</a>
+        </div>
+        <div class="img">
+          <img
+            src="https://media.ycharts.com/charts/ee62177c5e5720e04a3bf5c8298ca3e1.png"
+            alt=""
+            srcset=""
+          />
+        </div>
+      </main>
+    </header>
+  </body>
+</html>
