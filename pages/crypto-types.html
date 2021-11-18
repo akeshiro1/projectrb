@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HOME</title>
+    <title>Crypto</title>
     <style>
       * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        background-color:transparent;
+        background-color: #000;
       }
       body {
         font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -19,16 +19,6 @@
         text-decoration: none;
         color: inherit;
         transition: color 0.3s ease;
-      }
-      .thumbsup {
-        flex-basis: 50%;
-        position: absolute;
-        left: 11.2%;
-        top: 68%;
-        width: 3%;
-        transform: rotate(10deg) scaleX(-1);
-        height: 10%;
-        z-index: -1;
       }
       a:hover {
         color: deepskyblue;
@@ -108,22 +98,11 @@
 
       main .img {
         flex-basis: 50%;
-        animation: Tblur 1s linear;
       }
       main img {
         height: 100%;
         width: 100%;
-        animation: Tblur 1s linear;
       }
-      @keyframes Tblur {
-        0% {
-          filter: blur(5px);
-        }
-        100% {
-          filter: blur(0px);
-        }
-      }
-
       main .btn {
         background: deepskyblue;
         padding: 10px 30px;
@@ -134,16 +113,6 @@
         nav {
           padding: 20px;
         }
-        .thumbsup {
-        flex-basis: 50%;
-        position: absolute;
-        left: 69%;
-        top: 76%;
-        width: 8%;
-        transform: rotate(10deg) scaleX(-1);
-        height: 8%;
-        z-index: -1;
-      }
         .menu {
           display: none;
         }
@@ -175,36 +144,34 @@
       <nav class="wrap">
         <a href="#" class="logo">Informational</a>
         <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./pages/topics.html">Topics</a></li>
-          <li><a href="./pages/setting-up.html">Setting Up</a></li>
-          <li><a href="./pages/Investing.html">Investing</a></li>
-          <li><a href="./pages/resources.html">Resources</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./topics.html">Topics</a></li>
+          <li><a href="./setting-up.html">Setting Up</a></li>
+          <li><a href="./Investing.html">Investing</a></li>
+          <li><a href="./resources.html">Resources</a></li>
         </ul>
       </nav>
       <main class="wrap">
         <div class="content">
-          <h2><span>Information on </span><br />Stocks, Crypto, etc.</h2>
+          <h2><span></span><br />Crypto Types</h2>
           <p>
-            Brief summary of them all and how to get started. You got this Uncle
-            Robbie~
+            When it comes to crypto, there are many types of crypto, all with
+            different functions, developers behind them, the way they function,
+            and the "Ecosystem" they are in. There are 2 main types of crypto,
+            the coin category which is built within blockchain and are what is
+            used to store and transfer money. Whereas tokens (like memecoins and
+            others) are built off of these major coins.
           </p>
-          <a href="./pages/getting_started.html" class="btn">Start Process</a>
+          <a href="./topics.html" class="btn">Back</a>
         </div>
         <div class="img">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQamugRs090Y-EM-IA-Y1SM3v0UP12CNxImGw&usqp=CAU"
+            src="https://infogram.com/cryptocurrency-coins-vs-tokens-1h7j4dv73q5jv4n"
             alt=""
             srcset=""
-            style="border-radius: 15px"
+            style="border-radius: 25px; filter: drop-shadow(8px 8px 10px white)"
           />
         </div>
-        <div class="thumbsup">
-          <img
-            src="https://media1.giphy.com/media/ehz3LfVj7NvpY8jYUY/giphy.gif"
-            alt=""
-            srcset=""
-          />
       </main>
     </header>
   </body>
